@@ -1,0 +1,34 @@
+{
+  "name": "Swarna Roy",
+  "title": "Cloud & Data Engineer",
+  "summary": "Cloud and Data Engineer with 2+ years of experience building scalable cloud-native data pipelines using Google Cloud Platform (GCP), Apache Airflow, and Talend.",
+
+  "skills": [
+    "Python",
+    "SQL",
+    "Java",
+    "Apache Airflow",
+    "Talend",
+    "BigQuery",
+    "Pub/Sub",
+    "Cloud Functions",
+    "Dataproc",
+    "Apache Spark",
+    "Cloud Composer"
+  ],
+
+  "certifications": [
+    "Google Cloud Professional Data Engineer",
+    "Google Cloud Professional Cloud Architect",
+    "Google Cloud Associate Cloud Engineer",
+    "Google Cloud Generative AI Leader",
+    "Microsoft GitHub Copilot",
+    "Microsoft GitHub Advanced Security"
+  ],
+
+  "experience": {
+    "company": "Accenture",
+    "role": "Data Engineer",
+    "duration": "Sep 2024 - Present"
+  }
+}
