@@ -1,17 +1,11 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
 body{
+    margin:0;
     font-family:'Segoe UI',sans-serif;
     background:#0f172a;
     color:white;
-    line-height:1.6;
 }
 
-header{
+.hero{
     min-height:100vh;
     display:flex;
     flex-direction:column;
@@ -21,46 +15,22 @@ header{
     padding:20px;
 }
 
-h1{
+.hero h1{
     font-size:4rem;
+    margin-bottom:10px;
 }
 
-.highlight{
-    color:#38bdf8;
-}
-
-.subtitle{
-    margin-top:15px;
-    color:#cbd5e1;
+.hero p{
     max-width:700px;
+    color:#cbd5e1;
 }
 
-.btn-container{
-    margin-top:25px;
-}
-
-.btn{
-    display:inline-block;
-    padding:12px 20px;
-    background:#2563eb;
-    color:white;
-    text-decoration:none;
-    border-radius:10px;
-    margin:5px;
-    transition:0.3s;
-}
-
-.btn:hover{
-    transform:translateY(-4px);
-}
-
-section{
+.section{
     padding:80px 10%;
 }
 
-.section-title{
+.section h2{
     color:#38bdf8;
-    margin-bottom:20px;
 }
 
 .skills{
@@ -72,24 +42,10 @@ section{
 .skill{
     background:#1e293b;
     padding:10px 15px;
-    border-radius:20px;
-    transition:0.3s;
+    border-radius:25px;
 }
 
-.skill:hover{
-    background:#2563eb;
-}
-
-.timeline{
-    border-left:3px solid #38bdf8;
-    padding-left:20px;
-}
-
-.timeline-item{
-    margin-bottom:20px;
-}
-
-.card-grid{
+.cards{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:20px;
@@ -98,21 +54,10 @@ section{
 .card{
     background:#1e293b;
     padding:20px;
-    border-radius:15px;
+    border-radius:12px;
     transition:0.3s;
 }
 
 .card:hover{
     transform:translateY(-5px);
-}
-
-a{
-    color:#38bdf8;
-    text-decoration:none;
-}
-
-footer{
-    background:#020617;
-    text-align:center;
-    padding:30px;
 }
