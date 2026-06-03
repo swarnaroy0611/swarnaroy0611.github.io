@@ -1,63 +1,477 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===========================
+   Global Styles
+=========================== */
+
+*{
     margin:0;
-    font-family:'Segoe UI',sans-serif;
-    background:#0f172a;
-    color:white;
+    padding:0;
+    box-sizing:border-box;
 }
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#020617;
+
+    color:#ffffff;
+
+    overflow-x:hidden;
+
+    min-height:100vh;
+
+    position:relative;
+}
+
+/* ===========================
+   Animated Background Glow
+=========================== */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    width:600px;
+
+    height:600px;
+
+    border-radius:50%;
+
+    background:#2563eb;
+
+    filter:blur(180px);
+
+    opacity:.12;
+
+    top:-250px;
+
+    left:-250px;
+
+    z-index:-1;
+}
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    width:600px;
+
+    height:600px;
+
+    border-radius:50%;
+
+    background:#9333ea;
+
+    filter:blur(180px);
+
+    opacity:.12;
+
+    bottom:-250px;
+
+    right:-250px;
+
+    z-index:-1;
+}
+
+/* ===========================
+   Hero Section
+=========================== */
 
 .hero{
+
     min-height:100vh;
+
     display:flex;
-    flex-direction:column;
+
     justify-content:center;
+
     align-items:center;
+
+    padding:40px;
+}
+
+.hero-card{
+
+    width:100%;
+
+    max-width:1200px;
+
+    padding:60px;
+
     text-align:center;
-    padding:20px;
+
+    border-radius:32px;
+
+    background:rgba(15,23,42,.65);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+    0 0 40px rgba(37,99,235,.12);
 }
 
-.hero h1{
+/* ===========================
+   Profile Image
+=========================== */
+
+.profile-image{
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:4px solid #3b82f6;
+
+    box-shadow:
+    0 0 30px rgba(59,130,246,.55);
+
+    transition:.4s;
+}
+
+.profile-image:hover{
+
+    transform:scale(1.05);
+}
+
+/* ===========================
+   Hero Text
+=========================== */
+
+.hero-name{
+
+    margin-top:25px;
+
     font-size:4rem;
-    margin-bottom:10px;
+
+    font-weight:800;
+
+    background:
+    linear-gradient(
+        90deg,
+        #38bdf8,
+        #60a5fa,
+        #a855f7
+    );
+
+    -webkit-background-clip:text;
+
+    color:transparent;
 }
 
-.hero p{
-    max-width:700px;
-    color:#cbd5e1;
+.hero-title{
+
+    margin-top:10px;
+
+    color:#e2e8f0;
+
+    font-size:1.6rem;
+
+    font-weight:500;
 }
+
+.hero-summary{
+
+    max-width:900px;
+
+    margin:25px auto;
+
+    line-height:1.9;
+
+    color:#cbd5e1;
+
+    font-size:1.05rem;
+}
+
+/* ===========================
+   Social Buttons
+=========================== */
+
+.social-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin-top:30px;
+}
+
+.social-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    text-decoration:none;
+
+    color:#ffffff;
+
+    background:#0f172a;
+
+    padding:14px 24px;
+
+    border-radius:16px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.3s ease;
+}
+
+.social-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 0 25px rgba(59,130,246,.3);
+}
+
+/* ===========================
+   Action Buttons
+=========================== */
+
+.action-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin-top:25px;
+}
+
+.primary-btn,
+.secondary-btn{
+
+    text-decoration:none;
+
+    color:white;
+
+    padding:15px 30px;
+
+    border-radius:16px;
+
+    font-weight:600;
+
+    transition:.3s ease;
+}
+
+.primary-btn{
+
+    background:
+    linear-gradient(
+        90deg,
+        #2563eb,
+        #7c3aed
+    );
+}
+
+.secondary-btn{
+
+    background:#0f172a;
+
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.primary-btn:hover,
+.secondary-btn:hover{
+
+    transform:translateY(-5px);
+}
+
+/* ===========================
+   Section Styles
+=========================== */
 
 .section{
-    padding:80px 10%;
+
+    padding:100px 10%;
 }
 
-.section h2{
+.section-title{
+
+    font-size:2rem;
+
+    margin-bottom:30px;
+
     color:#38bdf8;
+
+    text-align:center;
 }
 
-.skills{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-}
-
-.skill{
-    background:#1e293b;
-    padding:10px 15px;
-    border-radius:25px;
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
+/* ===========================
+   Glass Cards
+=========================== */
 
 .card{
-    background:#1e293b;
-    padding:20px;
-    border-radius:12px;
-    transition:0.3s;
+
+    background:rgba(15,23,42,.7);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:24px;
+
+    padding:25px;
+
+    transition:.3s;
 }
 
 .card:hover{
-    transform:translateY(-5px);
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 0 25px rgba(59,130,246,.2);
+}
+
+/* ===========================
+   Skills
+=========================== */
+
+.skills-grid{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:12px;
+}
+
+.skill{
+
+    padding:12px 18px;
+
+    border-radius:30px;
+
+    background:#0f172a;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.3s;
+}
+
+.skill:hover{
+
+    background:#2563eb;
+
+    transform:translateY(-4px);
+}
+
+/* ===========================
+   Certifications
+=========================== */
+
+.certifications-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:20px;
+}
+
+/* ===========================
+   Experience Timeline
+=========================== */
+
+.timeline{
+
+    position:relative;
+
+    max-width:900px;
+
+    margin:auto;
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:20px;
+
+    width:2px;
+
+    height:100%;
+
+    background:#3b82f6;
+}
+
+.timeline-item{
+
+    margin-left:60px;
+
+    margin-bottom:40px;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+.hero-card{
+
+    padding:35px 25px;
+}
+
+.hero-name{
+
+    font-size:2.6rem;
+}
+
+.hero-title{
+
+    font-size:1.2rem;
+}
+
+.profile-image{
+
+    width:140px;
+    height:140px;
+}
+
+.hero-summary{
+
+    font-size:.95rem;
+}
+
+.social-links{
+
+    flex-direction:column;
+}
+
+.action-buttons{
+
+    flex-direction:column;
+}
 }
