@@ -1,33 +1,154 @@
 {
   "name": "Swarna Roy",
+
   "title": "Cloud & Data Engineer",
-  "summary": "Specializing in cloud-native data engineering, workflow orchestration, and data modernization by building scalable GCP-based pipelines, automating ETL/ELT processes, and transforming enterprise data into actionable insights.",
-  "skills": [
-    "Python",
-    "SQL",
-    "Java",
-    "Apache Airflow",
-    "Talend",
-    "BigQuery",
-    "Pub/Sub",
-    "Cloud Functions",
-    "Dataproc",
-    "Apache Spark",
-    "Cloud Composer"
+
+  "summary": "Building scalable cloud-native data platforms, modernizing enterprise data ecosystems through workflow orchestration, automation, and Google Cloud technologies, enabling reliable analytics and data-driven decision making at scale.",
+
+  "profileImage": "assets/profile.jpg",
+
+  "location": "Bengaluru, Karnataka, India",
+
+  "email": "swarna.roy1106@gmail.com",
+
+  "resume": "assets/resume.pdf",
+
+  "socials": {
+    "github": "https://github.com/swarnaroy0611",
+    "linkedin": "https://www.linkedin.com/in/swarna-roy-1a3534226/",
+    "credly": "https://www.credly.com/users/swarna-roy.69491549",
+    "microsoftLearn": "https://learn.microsoft.com/en-us/users/SwarnaRoy-6566"
+  },
+
+  "about": "Cloud and Data Engineer with 2+ years of experience designing, developing, and optimizing scalable cloud-native data pipelines. Experienced in ETL/ELT development, Apache Airflow (Cloud Composer), Talend, BigQuery, Pub/Sub, Cloud Functions, and cloud-native data modernization initiatives. Passionate about building reliable, scalable, and automated data solutions that enable enterprise analytics and business decision making.",
+
+  "stats": [
+    {
+      "number": "2+",
+      "label": "Years Experience"
+    },
+    {
+      "number": "7+",
+      "label": "Cloud Certifications"
+    },
+    {
+      "number": "10+",
+      "label": "Technologies"
+    }
+  ],
+
+  "skills": {
+
+    "Programming": [
+      "Python",
+      "SQL",
+      "Java"
+    ],
+
+    "Cloud Technologies": [
+      "Google Cloud Platform",
+      "BigQuery",
+      "Cloud Storage",
+      "Pub/Sub",
+      "Cloud Functions",
+      "Cloud Composer",
+      "Cloud SQL",
+      "Dataproc"
+    ],
+
+    "Data Engineering": [
+      "ETL",
+      "ELT",
+      "Data Warehousing",
+      "Data Modeling",
+      "Data Integration",
+      "Batch Processing"
+    ],
+
+    "Workflow Orchestration": [
+      "Apache Airflow",
+      "DAG Development",
+      "Workflow Automation"
+    ],
+
+    "Big Data": [
+      "Apache Spark",
+      "Spark SQL"
+    ],
+
+    "Tools": [
+      "Talend",
+      "Git",
+      "GitHub",
+      "Linux",
+      "CI/CD"
+    ]
+  },
+
+  "experience": [
+    {
+      "company": "Accenture",
+      "role": "Data Engineer",
+      "duration": "Sep 2024 - Present",
+
+      "description": [
+        "Developed, tested, and maintained scalable cloud-native data pipelines on Google Cloud Platform (GCP).",
+        "Designed and enhanced Apache Airflow (Cloud Composer) DAGs for ETL/ELT workflow orchestration.",
+        "Built automated data ingestion and transformation workflows using BigQuery, Cloud Storage, Pub/Sub, and Cloud Functions.",
+        "Migrated legacy Talend-based data integration processes to cloud-native GCP solutions.",
+        "Implemented monitoring, error handling, and performance optimization techniques to improve pipeline reliability."
+      ]
+    }
   ],
 
   "certifications": [
-    "Google Cloud Professional Data Engineer",
-    "Google Cloud Professional Cloud Architect",
-    "Google Cloud Associate Cloud Engineer",
-    "Google Cloud Generative AI Leader",
-    "Microsoft GitHub Copilot",
-    "Microsoft GitHub Advanced Security"
+    {
+      "name": "Google Cloud Professional Data Engineer",
+      "year": "2025"
+    },
+    {
+      "name": "Google Cloud Professional Cloud Architect",
+      "year": "2025"
+    },
+    {
+      "name": "Google Cloud Associate Cloud Engineer",
+      "year": "2025"
+    },
+    {
+      "name": "Google Cloud Data Practitioner",
+      "year": "2025"
+    },
+    {
+      "name": "Google Cloud Generative AI Leader",
+      "year": "2025"
+    },
+    {
+      "name": "Microsoft GitHub Copilot",
+      "year": "2025"
+    },
+    {
+      "name": "Microsoft GitHub Advanced Security",
+      "year": "2025"
+    }
   ],
 
-  "experience": {
-    "company": "Accenture",
-    "role": "Data Engineer",
-    "duration": "Sep 2024 - Present"
-  }
+  "projects": [
+    {
+      "title": "Cloud Native ETL Framework",
+      "tech": "GCP, Airflow, BigQuery",
+      "description": "Designed and automated enterprise ETL workflows using Cloud Composer and BigQuery."
+    },
+
+    {
+      "title": "Talend to GCP Migration",
+      "tech": "Talend, BigQuery, Cloud Storage",
+      "description": "Migrated legacy ETL workloads to cloud-native GCP architectures."
+    },
+
+    {
+      "title": "Real-Time Analytics Pipeline",
+      "tech": "Pub/Sub, Cloud Functions, BigQuery",
+      "description": "Built scalable real-time ingestion and analytics pipelines using Google Cloud services."
+    }
+  ]
 }
