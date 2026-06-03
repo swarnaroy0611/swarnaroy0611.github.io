@@ -1,9 +1,7 @@
 {
   "name": "Swarna Roy",
   "title": "Cloud & Data Engineer",
-  "summary": "Specializing in cloud-native data engineering, workflow orchestration, and data modernization by building scalable GCP-based pipelines, automating ETL/ELT processes, and transforming enterprise data into actionable insights.
-",
-
+  "summary": "Specializing in cloud-native data engineering, workflow orchestration, and data modernization by building scalable GCP-based pipelines, automating ETL/ELT processes, and transforming enterprise data into actionable insights.",
   "skills": [
     "Python",
     "SQL",
