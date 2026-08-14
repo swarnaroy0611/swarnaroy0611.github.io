@@ -137,7 +137,7 @@
     "title": "SFTP to GCS File Ingestion Pipeline",
     "tech": "Python, Apache Airflow, SFTP, Google Cloud Storage, SQL",
     "description": "Developed a configuration-driven ETL pipeline to extract CSV files from an external SFTP system, identify files using configurable patterns, stage them in a temporary directory, and upload them to Google Cloud Storage using Airflow connection IDs.",
-    "github": "https://github.com/swarnaroy0611/sftp-to-gcs-file-ingestion"
+    "github": "https://github.com/swarnaroy0611/SFTP-to-GCS-File-Ingestion-Pipeline"
   },
 
   {
