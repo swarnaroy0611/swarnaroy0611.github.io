@@ -133,22 +133,46 @@
   ],
 
   "projects": [
-    {
-      "title": "Cloud Native ETL Framework",
-      "tech": "GCP, Airflow, BigQuery",
-      "description": "Designed and automated enterprise ETL workflows using Cloud Composer and BigQuery."
-    },
+  {
+    "title": "SFTP to GCS File Ingestion Pipeline",
+    "tech": "Python, Apache Airflow, SFTP, Google Cloud Storage, SQL",
+    "description": "Developed a configuration-driven ETL pipeline to extract CSV files from an external SFTP system, identify files using configurable patterns, stage them in a temporary directory, and upload them to Google Cloud Storage using Airflow connection IDs.",
+    "github": "https://github.com/swarnaroy0611/sftp-to-gcs-file-ingestion"
+  },
 
-    {
-      "title": "Talend to GCP Migration",
-      "tech": "Talend, BigQuery, Cloud Storage",
-      "description": "Migrated legacy ETL workloads to cloud-native GCP architectures."
-    },
+  {
+    "title": "GCS to BigQuery Data Pipeline",
+    "tech": "Google Cloud Storage, BigQuery, Python, SQL",
+    "description": "Built a batch data ingestion pipeline to load files from Google Cloud Storage into BigQuery, with schema handling, data validation, transformation, and SQL-based processing for analytics.",
+    "github": "https://github.com/swarnaroy0611/gcs-to-bigquery-pipeline"
+  },
 
-    {
-      "title": "Real-Time Analytics Pipeline",
-      "tech": "Pub/Sub, Cloud Functions, BigQuery",
-      "description": "Built scalable real-time ingestion and analytics pipelines using Google Cloud services."
-    }
+  {
+    "title": "REST API to BigQuery Pipeline",
+    "tech": "Python, REST API, BigQuery, Cloud Storage",
+    "description": "Developed an API-based data ingestion workflow to extract JSON data from external systems, process and validate the response, stage data in Cloud Storage, and load it into BigQuery for analytics.",
+    "github": "https://github.com/swarnaroy0611/rest-api-to-bigquery"
+  },
+
+  {
+    "title": "Real-Time Analytics Pipeline",
+    "tech": "Pub/Sub, Dataflow, BigQuery, Cloud Functions",
+    "description": "Designed a real-time data pipeline to ingest event-driven data through Pub/Sub, process and transform streaming data using Dataflow, and load the results into BigQuery for near real-time analytics.",
+    "github": "https://github.com/swarnaroy0611/real-time-analytics-pipeline"
+  },
+
+  {
+    "title": "BigQuery to Bigtable Data Pipeline",
+    "tech": "BigQuery, Bigtable, Python, GCP",
+    "description": "Implemented a data integration flow to transform analytical data from BigQuery and load application-oriented records into Bigtable for high-performance, low-latency data access.",
+    "github": "https://github.com/swarnaroy0611/bigquery-to-bigtable"
+  },
+
+  {
+    "title": "Airflow ETL Orchestration",
+    "tech": "Apache Airflow, Python, GCP, BigQuery",
+    "description": "Designed Airflow DAGs to orchestrate data ingestion and transformation workflows with task dependencies, scheduling, retries, error handling, and monitoring.",
+    "github": "https://github.com/swarnaroy0611/airflow-etl-orchestration"
+  }
   ]
 }
